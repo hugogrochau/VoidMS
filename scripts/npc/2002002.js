@@ -1,0 +1,31 @@
+/* 
+*      Coded by: LilSmilee
+*     Use: Christmas Tree Decorations
+*/ 
+
+var item = [3990000, 3990001, 3990002, 3990003, 3990004, 3990005, 3990006, 3990007, 3990008, 3990009, 3990010, 3990011, 3990012, 3990013, 3990014, 3990015, 3990016, 3990017, 3990018, 3990019, 3990020, 3990021, 3990022, 3990023, 3991000, 3991001, 3991002, 3991003, 3991004, 3991005, 3991006, 3991007, 3991008, 3991009, 3991010, 3991011, 3991012, 3991013, 3991014, 3991015, 3991016, 3991017, 3991018, 3991019, 3991020, 3991021, 3991022, 3991023, 3991024, 3991025, 3991026, 3991027, 3991028, 3991029, 3991030, 3991031, 3991032, 3991033, 3991034, 3991035, 3991036, 3991037, 3991038, 3991039, 3991040, 3991041, 3991042, 3991043, 3991044, 3991045, 3991046, 3991047, 3991048, 3991049, 3991050, 3991051, 3992000, 3992001, 3992002, 3992003, 3992004, 3992005, 3992006, 3992007, 3992008, 3992009, 3992010, 3992011, 3992012, 3992013, 3992014, 3992015, 3992016, 3992017, 3992018, 3992019, 3992020, 3992021, 3992022, 3992023, 3992024, 3992025, 3992026, 3992027, 3992028, 3992029, 3992030, 3992031, 3992032, 3992033, 3992034, 3992035, 3992036, 3992037, 3992038, 3993000, 3993001, 3994000, 3994001, 3994002, 3994003, 3994004, 3994005, 3994006, 3994007, 3994008, 3994009, 3994010, 3994011, 3994012, 3994013, 3994014, 3994015, 3994016, 3994017, 3994018, 3994019, 3994020, 3994021, 3994022, 3994023, 3994024, 3994085, 3994086]; 
+
+function start() { 
+    status = -1; 
+    action(1, 0, 0); 
+} 
+
+function action(m,t,s) { 
+    if (m < 1) { 
+        cm.sendOk("#eGood Luck on your tree!"); 
+        cm.dispose(); 
+        return; 
+    } else { 
+        status++; 
+    } 
+    if (status == 0) { 
+    var text = "Hey! Are you ready to build up your christmas tree? Pick up your items here."; 
+    var items = new Array("#v3990000# - #rRed No. 1", "#v3990001# - Red No. 2", "#v3990002# - Red No. 3", "#v3990003# - Red No. 4", "#v3990004# - Red No. 5", "#v3990005# - Red No. 6", "#v3990006# - Red No. 7", "#v3990007# - Red No. 8", "#v3990008# - Red No. 9", "#v3990009# - Red No. 0", "#v3990010# #g- Green No. 1", "#v3990011# - Green No. 2", "#v3990012# - Green No. 3", "#v3990013# - Green No. 4", "#v3990014# - Green No. 5", "#v3990015# - Green No. 6", "#v3990016# - Green No. 7", "#v3990017# - Green No. 8", "#v3990018# - Green No. 9", "#v3990019# - Green No. 0", "#v3990020# #r- Red '+'", "#v3990021# - #rRed '-'", "#v3990022# #g- Green '+'", "#v3990023# - #gGreen '-'", "#v3991000# #r- Red 'A'", "#v3991001# - Red 'B'", "#v3991002# - Red 'C'", "#v3991003# - Red 'D'", "#v3991004# - Red 'E'", "#v3991005# - Red 'F'", "#v3991006# - Red 'G'", "#v3991007# - Red 'H'", "#v3991008# - Red 'I'", "#v3991009# - Red 'J'", "#v3991010# - Red 'K'", "#v3991011# - Red 'L'", "#v3991012# - Red 'M'", "#v3991013# - Red 'N'", "#v3991014# - Red 'O'", "#v3991015# - Red 'P'", "#v3991016# - Red 'Q'", "#v3991017# - Red 'R'", "#v3991018# - Red 'S'", "#v3991019# - Red 'T'", "#v3991020# - Red 'U'", "#v3991021# - Red 'V'", "#v3991022# - Red 'W'", "#v3991023# - Red 'X'", "#v3991024# - Red 'Y'", "#v3991025# - Red 'Z'", "#v3991026# #g- Green 'A'", "#v3991027# #g- Green 'B'", "#v3991028# #g- Green 'C'", "#v3991029# #g- Green 'D'", "#v3991030# #g- Green 'E'", "#v3991031# #g- Green 'F'", "#v3991032# #g- Green 'G'", "#v3991033# #g- Green 'H'", "#v3991034# #g- Green 'I'", "#v3991035# #g- Green 'J'", "#v3991036# #g- Green 'K'", "#v3991037# #g- Green 'L',", "#v3991038# #g- Green 'M'", "#v3991039# #g- Green 'N'", "#v3991040# #g- Green 'O'", "#v3991041# #g- Green 'P'", "#v3991042# #g- Green 'Q'", "#v3991043# #g- Green 'R'", "#v3991044# #g- Green 'S'", "#v3991045# #g- Green 'T'", "#v3991046# #g- Green 'U'", "#v3991047# #g- Green 'V'", "#v3991048# #g- Green 'W'", "#v3991049# #g- Green 'X'", "#v3991050# #g- Green 'Y'", "#v3991051# #g- Green 'Z'", "#v3992000# #e#k- Santa Ornament", "#v3992001# - Rudolph Ornament", "#v3992002# - Mushroom Ornament", "#v3992003# - Pig Ornament", "#v3992004# - Slime Ornament", "#v3992005# - Red Gift-Box Ornament", "#v3992006# - Blue Gift-Box Ornament", "#v3992007# - Yellow Gift-Box Ornament", "#v3992008# - Red Star Miniature Bulb", "#v3992009# - Blue Star Miniature Bulb", "#v3992010# - Green Star Miniature Bulb", "#v3992011# - Pink Star Miniature Bulb", "#v3992012# - Orange Star Miniature Bulb", "#v3992013# - Red Miniature Bulb", "#v3992014# - Blue Miniature Bulb", "#v3992015# - Yellow Miniature Bulb", "#v3992016# - Green Miniature Bulb", "#v3992017# - Red Ball Ornament", "#v3992018# - Blue Ball Ornament", "#v3992019# - Yellow Ball Ornament", "#v3992020# - Red Sock", "#v3992021# - The gingerbread man", "#v3992022# - The gingerbread woman", "#v3992023# - Candy Cane", "#v3992024# - Circular Tree Ornament", "#v3992025# - King-sized Star", "#v3992026# - Christmas wreath", "#v3992027# - Red Candle", "#v3992028# - Blue Candle", "#v3992029# - Yellow Candle", "#v3992030# - Red Candy Canes", "#v3992031# - Blue Candy Canes", "#v3992032# - Yellow Candy Canes", "#v3992033# - Red Fruit Leaves", "#v3992034# - Yellow Fruit Leaves", "#v3992035# - Red-Ribboned Giftbox", "#v3992036# - Blue-Ribboned Giftbox", "#v3992037# - Yellow-Ribboned Giftbox", "#v3992038# - Rudolph Santa Boots", "#v3993000# - Lucky Dish", "#v3993001# - Luck Sack", "#v3994000# - Wooden Alphabet 'A'", "#v3994001# - Wooden Alphabet 'E'", "#v3994002# - Wooden Alphabet 'I'", "#v3994003# - Wooden Alphabet 'L'", "#v3994004# - Wooden Alphabet 'N'", "#v3994005# - Wooden Alphabet 'O'", "#v3994006# - Wooden Alphabet 'P'", "#v3994007# - Wooden Alphabet 'R'", "#v3994008# - Wooden Alphabet 'T'", "#v3994009# - Wooden Alphabet 'X'", "#v3994010# - Wooden Alphabet 'Y'", "#v3994011# - Wooden Alphabet 'Z'", "#v3994012# - Special 'M'", "#v3994013# - Special 'S'", "#v3994014# - Special 'W'", "#v3994015# - Wooden Alphabet C", "#v3994016# - Wooden Alphabet C", "#v3994017# - Alphabet A", "#v3994018# - Alphabet E", "#v3994019# - Alphabet H", "#v3994020# - Alphabet N", "#v3994021# - Alphabet P", "#v3994022# - Alphabet R", "#v3994023# - Alphabet W", "#v3994024# - Alphabet Y", "#v3994085# - Admin's Candle", "#v3994086# - Birthday Cake Candle"); 
+            for (var i = 0; i < items.length; i++) 
+            text += "\r\n#L"+i+"#"+items[i]+"#l"; 
+                cm.sendSimple(text); 
+    } else if (status == 1) { 
+        cm.gainItem(item[s], 1); 
+        cm.dispose(); 
+    } 
+}
